@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(npm run build:*)",
+      "Bash(timeout 10 npm run dev)",
+      "Bash(taskkill:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(netstat:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(npx next build)"
+    ]
+  }
+}

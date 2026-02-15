@@ -1,0 +1,15 @@
+
+> openbitx-web@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://172.31.160.1:3000
+
+✓ Starting...
+✓ Ready in 1654ms
+Persisting failed: Unable to write SST file 00000023.sst
+
+Caused by:
+    系统找不到指定的路径。 (os error 3)
+[?25h
