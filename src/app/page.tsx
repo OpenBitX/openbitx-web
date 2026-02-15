@@ -1,23 +1,15 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import HeroOverlay from "@/components/dom/HeroOverlay";
 import Navbar from "@/components/dom/Navbar";
 import BentoGrid from "@/components/dom/BentoGrid";
-
-/**
- * Dynamically import the 3D Scene (client component with Three.js / WebGL).
- * SSR disabled because Canvas requires the browser's WebGL context.
- */
-const Scene = dynamic(() => import("@/components/canvas/Scene"), {
-    ssr: false,
-});
+import BinaryCircuitCanvas from "@/components/dom/BinaryCircuitCanvas";
 
 export default function Home() {
     return (
         <>
-            {/* 3D background layer — fixed behind everything */}
-            <Scene />
+            {/* Canvas 2D background layer — 性能优化版本 */}
+            <BinaryCircuitCanvas />
 
             {/* DOM content layer */}
             <Navbar />
